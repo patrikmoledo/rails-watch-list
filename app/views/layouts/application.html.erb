@@ -11,6 +11,14 @@
   </head>
 
   <body>
+    <nav class="navbar bg-light">
+      <div class="container-fluid">
+        <%= link_to lists_path, class: 'btn btn-secondary' do %>
+          <i class="fa-solid fa-house"></i>
+        <% end %>
+        <%= link_to 'Add list', new_list_path, class: 'btn btn-secondary' %>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
