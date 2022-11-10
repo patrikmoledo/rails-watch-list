@@ -16,3 +16,22 @@ Movie.create(title: "Titanic", overview: "101-year-old Rose DeWitt Bukater tells
 Movie.create(title: "Ocean's Eight", overview: "Debbie Ocean, a criminal mastermind, gathers a crew of female thieves to pull off the heist of the century.", poster_url: "https://image.tmdb.org/t/p/original/MvYpKlpFukTivnlBhizGbkAe3v.jpg", rating: 7.0)
 
 puts "Created #{Movie.count}. movies"
+
+# require 'open-uri'
+# Movie.destroy_all
+# List.destroy_all
+
+# # the Le Wagon copy of the API
+# url = 'http://tmdb.lewagon.com/movie/top_rated'
+# response = JSON.parse(URI.open(url).read)
+
+# response['results'].each do |movie_hash|
+#   puts
+#   p movie_hash
+#   # create an instance with the hash
+#   10.times do
+#     Movie.create!(
+#       poster_url: "https://image.tmdb.org/t/p/w500" + movie_hash['poster_path']
+#     )
+#   end
+# end
