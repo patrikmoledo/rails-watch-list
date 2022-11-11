@@ -32,7 +32,8 @@ response['results'].each do |movie_hash|
   # create an instance with the hash
   Movie.create!(
     title: movie_hash['title'],
-    overview: movie_hash['overview']
+    overview: movie_hash['overview'],
+    poster_url: "https://image.tmdb.org/t/p/w500#{movie_hash['poster_path']}"
     # poster_url: "https://image.tmdb.org/t/p/w500" + movie_hash['poster_path']
   )
 end
