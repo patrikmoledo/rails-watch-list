@@ -1,24 +1,41 @@
-# README
+# FreshOut
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Web Application to create list of movies, you can categorize them and share with your friends.
 
-Things you may want to cover:
+<img src="app/assets/images/Watchlist-homepage.png">
 
-* Ruby version
+## How to run
+### Setup
 
-* System dependencies
+Install gems
+```
+bundle install
+```
+Install JS packages
+```
+yarn install
+```
 
-* Configuration
+### ENV Variables
+Create `.env` file
+```
+touch .env
+```
+Inside `.env`, set these variables. For any APIs, see group Slack channel.
+```
+CLOUDINARY_URL=YOUR_KEY
+```
 
-* Database creation
+### DB Setup
+```
+rails db:create
+rails db:migrate
+rails db:seed
+```
 
-* Database initialization
+### Run a server
+```
+rails s
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<br>
